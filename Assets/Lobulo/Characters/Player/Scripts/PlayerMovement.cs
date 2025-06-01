@@ -1,37 +1,34 @@
-using System;
 using UnityEngine;
-using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
-public class PlayerMovement : BaseMovement
+[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(PlayerController))]
+public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private InputActionAsset _inputAction;
-    
-    private InputAction _movementInput;
+    [SerializeField] private PlayerDataSO playerDataData;
+    private Rigidbody _rigidbody;
 
-    private void OnEnable()
+    protected virtual void Awake()
     {
-        _inputAction.FindActionMap("Gameplay").Enable();
-    }
-    private void OnDisable()
-    {
-        _inputAction.FindActionMap("Gameplay").Disable();
+        _rigidbody = GetComponent<Rigidbody>();
     }
 
-    protected override void Awake()
+    public void Move(Vector2 value)
     {
-        base.Awake();
+        if (value != Vector2.zero)
+        {
+            Vector3 direction = new Vector3(value.x, 0, value.y);
+            _rigidbody.AddForce(direction * playerDataData.Acceleration, ForceMode.VelocityChange);
 
-        FindInputs();
-    }
+            if (_rigidbody.linearVelocity.magnitude > playerDataData.MaxSpeed)
+            {
+                _rigidbody.linearVelocity = _rigidbody.linearVelocity.normalized *playerDataData.MaxSpeed;
+            }
+        }
+        else
+        {
+            _rigidbody.AddForce(_rigidbody.linearVelocity * -playerDataData.Deceleration, ForceMode.VelocityChange);
+        }
 
-    private void FindInputs()
-    {
-        _movementInput = InputSystem.actions.FindAction("Movement");
     }
-
-    private void FixedUpdate()
-    {
-        MoveObject(_movementInput.ReadValue<Vector2>());
-    }
-    
 }

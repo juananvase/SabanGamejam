@@ -9,12 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3129788210366b41b623a6f83cee17a, type: 3}
-  m_Name: PlayerMovementData
+  m_Script: {fileID: 11500000, guid: 01100e9387cff3c418df391ab7611ad9, type: 3}
+  m_Name: BasicWeapon
   m_EditorClassIdentifier: 
-  <Acceleration>k__BackingField: 5
-  <Deceleration>k__BackingField: 0.3
-  <MaxSpeed>k__BackingField: 17
-  <GroundMask>k__BackingField:
-    serializedVersion: 2
-    m_Bits: 4294967295
+  <Ammo>k__BackingField: {fileID: 379679151759102621, guid: 7a0318e582600ab43a6f52e9ee4f63b9, type: 3}
+  <CooldownTime>k__BackingField: 0.3

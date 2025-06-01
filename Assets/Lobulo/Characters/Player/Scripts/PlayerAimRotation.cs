@@ -1,9 +1,10 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
-    public class PlayerAimRotation : MonoBehaviour
+public class PlayerAimRotation : MonoBehaviour
     {
         
-        [SerializeField] private MovementSO _movementData;
+         [SerializeField] private PlayerDataSO playerDataData;
         [SerializeField] private Camera _mainCamera;
 
         private void Update()
@@ -27,7 +28,7 @@ using UnityEngine;
         {
             var ray = _mainCamera.ScreenPointToRay(Input.mousePosition);
 
-            if (Physics.Raycast(ray, out var hitInfo, Mathf.Infinity, _movementData.GroundMask))
+            if (Physics.Raycast(ray, out var hitInfo, Mathf.Infinity, playerDataData.GroundMask))
             {
                 return (success: true, position: hitInfo.point);
             }

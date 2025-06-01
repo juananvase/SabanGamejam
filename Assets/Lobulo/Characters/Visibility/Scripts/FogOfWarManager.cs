@@ -13,6 +13,8 @@ public class FogOfWarManager : MonoBehaviour
     private RenderTexture fogTexture;
     private Material drawMaterial;
 
+    public Vector3 offSet;
+
     public struct UnitInfo
     {
         public Vector3 position;
@@ -52,7 +54,7 @@ public class FogOfWarManager : MonoBehaviour
         if (index >= 0 && index < units.Count)
         {
             var u = units[index];
-            u.position = position;
+            u.position = position + offSet;
             units[index] = u;
         }
     }
@@ -60,7 +62,7 @@ public class FogOfWarManager : MonoBehaviour
     void DrawFogTexture()
     {
         RenderTexture.active = fogTexture;
-        GL.Clear(true, true, new Color(0f, 0f, 0f, 0.95f));
+        GL.Clear(true, true, new Color(0f, 0f, 0f, 0.85f));
 
         GL.PushMatrix();
         GL.LoadPixelMatrix(0, settings.textureSize, settings.textureSize, 0);

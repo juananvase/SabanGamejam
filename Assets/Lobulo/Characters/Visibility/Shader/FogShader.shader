@@ -34,7 +34,7 @@ Shader "Hidden/FogDraw"
                 if (dist > radius)
                     clip(-1); // descarta fragmento fuera del círculo
 
-                return fixed4(1, 1, 1, 0); // dentro del círculo, color blanco pero alfa 0 (transparente)
+                return fixed4(1, 1, 1, 0.2); // dentro del círculo, color blanco pero alfa 0 (transparente)
             }
             ENDCG
         }

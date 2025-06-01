@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: New Fog Settings
   m_EditorClassIdentifier: 
   textureSize: 1920
-  worldSize: {x: 120, y: 65}
+  worldSize: {x: 100, y: 50}
   worldCenter: {x: 0, y: 0, z: 0}
   defaultVisionRadius: 15
+  GroundSize: {x: 0, y: 0, z: 0}

@@ -6,7 +6,7 @@ using UnityEngine;
 public class Health : MonoBehaviour, IHealable, IDamagable
 {
     [SerializeField] private CharacterDataSO _characterData;
-    [SerializeField] private EmptyEventAsset _onCharacterDeath;
+    [SerializeField] private GameObjectEventAsset _onCharacterDeath;
     [SerializeField] private Death _death;
 
     public void Heal(float amount)
@@ -27,7 +27,7 @@ public class Health : MonoBehaviour, IHealable, IDamagable
     {
         _death.DeathFunctionality();
         yield return new WaitForSeconds(3f);
-        _onCharacterDeath?.Invoke();
+        _onCharacterDeath?.Invoke(gameObject);
         Destroy(gameObject);
     }
 }

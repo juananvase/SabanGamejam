@@ -1,8 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
 public class BulletPattern : MonoBehaviour
 {
     [SerializeField] private float _force;
@@ -26,6 +24,7 @@ public class BulletPattern : MonoBehaviour
 
     public void ApplyForce()
     {
+        if(!_rigidbody) return;
         _rigidbody.AddForce(transform.forward * _force, ForceMode.Impulse);
     }
 

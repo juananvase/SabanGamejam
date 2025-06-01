@@ -6,9 +6,17 @@ public class Death : MonoBehaviour
 {
     [SerializeField] private Collider[] _colliders;
     [SerializeField] private Rigidbody[] _rigidbodies;
+    
+    private CharacterController _characterController;
+
+    private void Awake()
+    {
+        _characterController = GetComponent<CharacterController>();
+    }
 
     public void DeathFunctionality()
     {
+        _characterController.enabled = false;
         ChangeLayerToDeath();
         Disarmament();
     }

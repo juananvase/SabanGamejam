@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : CharacterController
 {
     [SerializeField] private PlayerDataSO _playerData;
     [SerializeField] private EmptyEventAsset _onPlayerDeath;

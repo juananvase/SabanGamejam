@@ -558,6 +558,7 @@ GameObject:
   - component: {fileID: 7698479421705656879}
   - component: {fileID: 1888444302761666813}
   - component: {fileID: 3940466262181759420}
+  - component: {fileID: 2110546183132037198}
   m_Layer: 8
   m_Name: BaseEnemyContainer
   m_TagString: Untagged
@@ -688,6 +689,28 @@ MonoBehaviour:
   _weaponData: {fileID: 11400000, guid: 017731180a63f594590c16cfeaf3e9d1, type: 2}
   _bulletAnchor: {fileID: 1140163324467143199}
   _layer: EnemyBullet
+--- !u!195 &2110546183132037198
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5507081899972202233}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &6164173435288727388
 GameObject:
   m_ObjectHideFlags: 0

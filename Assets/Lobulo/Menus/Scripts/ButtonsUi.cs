@@ -3,12 +3,16 @@ using UnityEngine.SceneManagement;
 
 public class ButtonsUI : MonoBehaviour
 {
-    [SerializeField] private CharacterDataSO _characterData; // <-- NUEVO
-
     public void Play()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
+    
+    public void LoadNextLevel() 
+    {
+        int nextIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        SceneManager.LoadScene(nextIndex);
+    } 
 
     public void RetryLevel()
     {

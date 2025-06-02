@@ -4,6 +4,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [field: SerializeField] public GameObject Player { get; private set; }
+    [field: SerializeField] public Camera Camera { get; private set; }
     [field: SerializeField] public GameObject RoomBoss { get; private set; }
     [field: SerializeField] public PerksDataSO PerksData { get; private set; }
 
@@ -16,6 +17,7 @@ public class GameManager : MonoBehaviour
     {
         SinglentonCheckDuplicates();
         Player = GameObject.Find("PlayerContainer");
+        Camera = GameObject.Find("Main Camera").GetComponent<Camera>();
 
         PerksData.HaveShield = _haveShield;
         PerksData.HaveLigthBullets = _haveLigthBullets;

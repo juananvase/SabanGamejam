@@ -8,7 +8,7 @@ public class SceneTransitionTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.gameObject == GameManager.Instance.Player)
         {
             // Guarda el ID de esta puerta como la que usaste para entrar a la siguiente escena
             PlayerPrefs.SetString("LastDoorUsed", entryDoorID);

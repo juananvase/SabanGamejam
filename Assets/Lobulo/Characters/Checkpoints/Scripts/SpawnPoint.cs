@@ -10,7 +10,7 @@ public class SpawnPoint : MonoBehaviour
 
         if (doorID == lastUsedDoor)
         {
-            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            GameObject player = GameManager.Instance.Player;
             if (player != null)
             {
                 CharacterController cc = player.GetComponent<CharacterController>();

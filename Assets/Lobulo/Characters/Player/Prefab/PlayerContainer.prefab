@@ -517,6 +517,7 @@ MonoBehaviour:
   - {fileID: 5152145626257398303}
   - {fileID: 6737195312515645235}
   - {fileID: 5757181564030157472}
+  deathSceneName: DeathScene
 --- !u!114 &6079144086365520000
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,11 +1,17 @@
+using System;
 using UnityEngine;
 using UnityEngine.Serialization;
 
 public class PlayerAimRotation : MonoBehaviour
     {
         
-         [SerializeField] private PlayerDataSO playerDataData;
+        [SerializeField] private PlayerDataSO playerDataData;
         [SerializeField] private Camera _mainCamera;
+
+        private void Start()
+        {
+            _mainCamera = GameManager.Instance.Camera;
+        }
 
         private void Update()
         {

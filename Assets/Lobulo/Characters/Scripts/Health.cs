@@ -14,6 +14,9 @@ public class Health : MonoBehaviour, IHealable, IDamagable
     [SerializeField] private Material _normal;
     [SerializeField] private Material _damage;
     
+    [SerializeField] private AudioSource _effectsMusicSource;
+    [SerializeField] private AudioClip _sfx;
+    
 
     private void OnEnable()
     {
@@ -29,7 +32,7 @@ public class Health : MonoBehaviour, IHealable, IDamagable
     public void Damage(float amount)
     {
         StartCoroutine(DamageFeedback());
-        
+        PlaySound();
         _currentHealth -= amount;
         _currentHealth = Mathf.Clamp(_currentHealth, 0f, _characterData.MaxHealth);
         
@@ -50,6 +53,12 @@ public class Health : MonoBehaviour, IHealable, IDamagable
         _death.DeathScene();
         _onCharacterDeath?.Invoke(gameObject);
         Destroy(gameObject);
+    }
+    
+    private void PlaySound()
+    {
+        _effectsMusicSource.clip = _sfx;
+        _effectsMusicSource.Play();
     }
 }
 

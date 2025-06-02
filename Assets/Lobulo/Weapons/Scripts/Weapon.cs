@@ -7,6 +7,9 @@ public class Weapon : MonoBehaviour
     [SerializeField] private Transform _bulletAnchor;
     [SerializeField] private string _layer;
     
+    [SerializeField] private AudioSource _effectsMusicSource;
+    [SerializeField] private AudioClip _sfx;
+    
     private float _nextFireTime;
     private bool _isCoolingdown => Time.time < _nextFireTime;
     
@@ -16,6 +19,7 @@ public class Weapon : MonoBehaviour
     {
         if(_isCoolingdown) return;
         
+        PlaySound();
         BulletPattern ammoType;
         if (GameManager.Instance.PerksData.HaveStunBullets && _secondWeaponData != null) ammoType = _secondWeaponData.Ammo;
         else ammoType = _weaponData.Ammo;
@@ -24,5 +28,11 @@ public class Weapon : MonoBehaviour
         ammo.layer = LayerMask.NameToLayer(_layer);
         
         StartCoolDown();
+    }
+    
+    private void PlaySound()
+    {
+        _effectsMusicSource.clip = _sfx;
+        _effectsMusicSource.Play();
     }
 }

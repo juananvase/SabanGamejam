@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 using Random = UnityEngine.Random;
 
 public class EnemySpawnner : MonoBehaviour
@@ -11,6 +12,8 @@ public class EnemySpawnner : MonoBehaviour
     private float _nextFireTime;
     private bool _isCoolingdown => Time.time < _nextFireTime;
     private void StartCoolDown() => _nextFireTime = Time.time + _spawnCooldown;
+    
+    public UnityEvent onCharacterDeath;
 
     private void OnEnable()
     {
@@ -27,6 +30,7 @@ public class EnemySpawnner : MonoBehaviour
     private void CheckBossDeath(GameObject value)
     {
         if (value == GameManager.Instance.RoomBoss) Destroy(gameObject);
+        onCharacterDeath?.Invoke();
     }
 
     private void Update()

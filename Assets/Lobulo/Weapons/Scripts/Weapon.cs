@@ -20,7 +20,7 @@ public class Weapon : MonoBehaviour
         if(_isCoolingdown) return;
 
         if (GameManager.Instance.PerksData.HaveLigthBullets && _secondWeaponData != null) _secondWeaponData.CooldownTime = 0.3f;
-        else _secondWeaponData.CooldownTime = 0.5f;
+        else if(_secondWeaponData != null) _secondWeaponData.CooldownTime = 0.5f;
         
         PlaySound();
         BulletPattern ammoType;

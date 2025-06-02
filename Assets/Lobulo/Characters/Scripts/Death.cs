@@ -1,13 +1,15 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Death : MonoBehaviour
 {
     [SerializeField] private GameObject _drop;
     [SerializeField] private Collider[] _colliders;
     [SerializeField] private Rigidbody[] _rigidbodies;
-    
+    [SerializeField] private string deathSceneName = "DeathScene";
+
     private CharacterController _characterController;
     private PlayerAimRotation _playerAimRotation;
 
@@ -23,6 +25,7 @@ public class Death : MonoBehaviour
         
         if(_playerAimRotation) _playerAimRotation.enabled = false;
         _characterController.enabled = false;
+
         ChangeLayerToDeath();
         Disarmament();
     }
@@ -46,6 +49,18 @@ public class Death : MonoBehaviour
         {
             rigidbody.isKinematic = false;
             rigidbody.AddExplosionForce(250f, transform.position, 3f);
+        }
+    }
+
+    public void DeathScene()
+    {
+        if (!string.IsNullOrEmpty(deathSceneName))
+        {
+            Debug.Log("Muriendo");
+            SceneManager.LoadScene(deathSceneName);
+
+            PlayerPrefs.SetInt("LastSceneBeforeDeath", SceneManager.GetActiveScene().buildIndex);
+            PlayerPrefs.Save();
         }
     }
 }

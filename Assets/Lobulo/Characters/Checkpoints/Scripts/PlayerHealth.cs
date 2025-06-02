@@ -1,0 +1,37 @@
+using System;
+using System.Collections;
+using Unity.VisualScripting;
+using UnityEngine;
+
+public class PlayerHealth : MonoBehaviour, IHealable, IDamagable
+{
+    [SerializeField] private CharacterDataSO _characterData;
+    [SerializeField] private GameObjectEventAsset _onCharacterDeath;
+    [SerializeField] private PlayerDeath _death;
+
+    public void Heal(float amount)
+    {
+        _characterData.CurrentHealth += amount;
+        _characterData.CurrentHealth = Mathf.Clamp(_characterData.CurrentHealth, 0f, _characterData.MaxHealth);
+    }
+
+    public void Damage(float amount)
+    {
+        _characterData.CurrentHealth -= amount;
+        _characterData.CurrentHealth = Mathf.Clamp(_characterData.CurrentHealth, 0f, _characterData.MaxHealth);
+
+        if (_characterData.CurrentHealth <= 0)
+        {
+            StartCoroutine(OnPlayerDeathCoroutine());
+        }
+    }
+
+    private IEnumerator OnPlayerDeathCoroutine()
+    {
+        _death.DeathFunctionality();
+        yield return new WaitForSeconds(3f);
+        _onCharacterDeath?.Invoke(gameObject);
+        Destroy(gameObject);
+    }
+}
+

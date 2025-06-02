@@ -125,10 +125,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5835177788391451307, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
+    - target: {fileID: 7151008666474372396, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
     - target: {fileID: 7934427198180491990, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
       propertyPath: m_Name
       value: ShotgunAmmo (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 9081791517895690499, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -187,10 +199,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5835177788391451307, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
+    - target: {fileID: 7151008666474372396, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
     - target: {fileID: 7934427198180491990, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
       propertyPath: m_Name
       value: ShotgunAmmo (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9081791517895690499, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -249,10 +273,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5835177788391451307, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
+    - target: {fileID: 7151008666474372396, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
     - target: {fileID: 7934427198180491990, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
       propertyPath: m_Name
       value: ShotgunAmmo (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9081791517895690499, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -311,10 +347,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5835177788391451307, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
+    - target: {fileID: 7151008666474372396, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
     - target: {fileID: 7934427198180491990, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
       propertyPath: m_Name
       value: ShotgunAmmo
       objectReference: {fileID: 0}
+    - target: {fileID: 9081791517895690499, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

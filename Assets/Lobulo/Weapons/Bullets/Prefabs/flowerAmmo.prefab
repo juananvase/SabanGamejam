@@ -116,6 +116,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7090820881661322872}
     m_Modifications:
+    - target: {fileID: 2973332670368964712, guid: 324953591671886499b1eff6e8c55148, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
     - target: {fileID: 5350341140374505320, guid: 324953591671886499b1eff6e8c55148, type: 3}
       propertyPath: m_Name
       value: Bullet (1)
@@ -222,6 +226,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8679311091959936429, guid: 7a0318e582600ab43a6f52e9ee4f63b9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -240,6 +248,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7090820881661322872}
     m_Modifications:
+    - target: {fileID: 2973332670368964712, guid: 324953591671886499b1eff6e8c55148, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
     - target: {fileID: 5350341140374505320, guid: 324953591671886499b1eff6e8c55148, type: 3}
       propertyPath: m_Name
       value: Bullet (2)
@@ -346,6 +358,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8679311091959936429, guid: 7a0318e582600ab43a6f52e9ee4f63b9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -404,10 +420,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5835177788391451307, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
+    - target: {fileID: 7151008666474372396, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
     - target: {fileID: 7934427198180491990, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
       propertyPath: m_Name
       value: ShotgunAmmo (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9081791517895690499, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -466,10 +494,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5835177788391451307, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
+    - target: {fileID: 7151008666474372396, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
     - target: {fileID: 7934427198180491990, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
       propertyPath: m_Name
       value: ShotgunAmmo (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 9081791517895690499, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -488,6 +528,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7090820881661322872}
     m_Modifications:
+    - target: {fileID: 2973332670368964712, guid: 324953591671886499b1eff6e8c55148, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
     - target: {fileID: 5350341140374505320, guid: 324953591671886499b1eff6e8c55148, type: 3}
       propertyPath: m_Name
       value: Bullet (3)
@@ -594,6 +638,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8679311091959936429, guid: 7a0318e582600ab43a6f52e9ee4f63b9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -656,6 +704,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8679311091959936429, guid: 7a0318e582600ab43a6f52e9ee4f63b9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -718,6 +770,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8679311091959936429, guid: 7a0318e582600ab43a6f52e9ee4f63b9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -736,6 +792,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7090820881661322872}
     m_Modifications:
+    - target: {fileID: 2973332670368964712, guid: 324953591671886499b1eff6e8c55148, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
     - target: {fileID: 5350341140374505320, guid: 324953591671886499b1eff6e8c55148, type: 3}
       propertyPath: m_Name
       value: Bullet
@@ -838,10 +898,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5835177788391451307, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
+    - target: {fileID: 7151008666474372396, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
     - target: {fileID: 7934427198180491990, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
       propertyPath: m_Name
       value: ShotgunAmmo (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9081791517895690499, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -900,10 +972,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5835177788391451307, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
+    - target: {fileID: 7151008666474372396, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
     - target: {fileID: 7934427198180491990, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
       propertyPath: m_Name
       value: ShotgunAmmo
       objectReference: {fileID: 0}
+    - target: {fileID: 9081791517895690499, guid: 41c753debbe8f6048bae91f420af25ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d69f5a57e6f9e0b419664972c1092bef, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -516,6 +516,7 @@ MonoBehaviour:
   - {fileID: 3164229875491254502}
   - {fileID: 3376628787151495481}
   - {fileID: 9011865227303522681}
+  deathSceneName: DeathScene
 --- !u!114 &6079144086365520000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -569,7 +570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8a861e13d99ae74f99e12a81afe0b6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _weaponData: {fileID: 11400000, guid: ddf3b8810eb824d4db95a99247bec957, type: 2}
+  _weaponData: {fileID: 11400000, guid: 017731180a63f594590c16cfeaf3e9d1, type: 2}
   _secondWeaponData: {fileID: 11400000, guid: ddf3b8810eb824d4db95a99247bec957, type: 2}
   _bulletAnchor: {fileID: 6080128299233746203}
   _layer: PlayerBullet

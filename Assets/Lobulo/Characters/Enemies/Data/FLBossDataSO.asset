@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: FLBossDataSO
   m_EditorClassIdentifier: 
   <MaxHealth>k__BackingField: 250
-  <CurrentHealth>k__BackingField: 250
   <AttackRange>k__BackingField: 13

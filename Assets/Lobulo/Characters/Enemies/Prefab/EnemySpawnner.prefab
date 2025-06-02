@@ -48,5 +48,5 @@ MonoBehaviour:
   - {fileID: 5507081899972202233, guid: 865b991cb5c52674b954d73205502e8a, type: 3}
   - {fileID: 5507081899972202233, guid: 865b991cb5c52674b954d73205502e8a, type: 3}
   - {fileID: 8512080713675053979, guid: 05dd476439e524b43a45b79d04ab354c, type: 3}
-  _spawnCooldown: 3
+  _spawnCooldown: 5
   _onCharacterDeath: {fileID: 11400000, guid: 46d203b0399f49d4e91b1cf030128eb6, type: 2}

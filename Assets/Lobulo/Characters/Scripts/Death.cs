@@ -9,6 +9,9 @@ public class Death : MonoBehaviour
     [SerializeField] private Collider[] _colliders;
     [SerializeField] private Rigidbody[] _rigidbodies;
     [SerializeField] private string deathSceneName = "DeathScene";
+    
+    [SerializeField] private AudioSource _effectsMusicSource;
+    [SerializeField] private AudioClip _sfx;
 
     private CharacterController _characterController;
     private PlayerAimRotation _playerAimRotation;
@@ -21,6 +24,7 @@ public class Death : MonoBehaviour
 
     public void DeathFunctionality()
     {
+        PlaySound();
         if(_drop != null) Instantiate(_drop, transform.position, transform.rotation);
         
         if(_playerAimRotation) _playerAimRotation.enabled = false;
@@ -61,5 +65,11 @@ public class Death : MonoBehaviour
             PlayerPrefs.SetInt("LastSceneBeforeDeath", SceneManager.GetActiveScene().buildIndex);
             PlayerPrefs.Save();
         }
+    }
+    
+    private void PlaySound()
+    {
+        _effectsMusicSource.clip = _sfx;
+        _effectsMusicSource.Play();
     }
 }

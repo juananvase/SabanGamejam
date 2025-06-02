@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fogRevealers:
   - revealerTransform: {fileID: 0}
-    sightRange: 10
+    sightRange: 15
     updateOnlyOnMove: 1
     lastSeenAt: {x: 0, y: 0}
   levelMidPoint: {fileID: 0}
@@ -54,7 +54,7 @@ MonoBehaviour:
   fogPlaneHeight: 1
   fogPlaneMaterial: {fileID: 2100000, guid: 36b93ac6fcf129c449491654e397fe4a, type: 2}
   fogColor: {r: 0.18307228, g: 0.19530974, b: 0.20754719, a: 1}
-  fogPlaneAlpha: 1
+  fogPlaneAlpha: 0.97
   fogLerpSpeed: 5
   keepRevealedTiles: 0
   revealedTileOpacity: 0.5
@@ -63,8 +63,8 @@ MonoBehaviour:
   LevelDataToLoad: {fileID: 0}
   saveDataOnScan: 1
   levelNameToSave: Default
-  levelDimensionX: 64
-  levelDimensionY: 64
+  levelDimensionX: 128
+  levelDimensionY: 128
   unitScale: 2
   scanSpacingPerUnit: 0.25
   rayStartHeight: 5

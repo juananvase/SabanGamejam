@@ -2980,52 +2980,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 5954899908191634945}
     m_Modifications:
     - target: {fileID: 3083915877961893528, guid: be8b504b34a937945839f20094021973, type: 3}
-      propertyPath: fogPlaneAlpha
-      value: 0.97
-      objectReference: {fileID: 0}
-    - target: {fileID: 3083915877961893528, guid: be8b504b34a937945839f20094021973, type: 3}
       propertyPath: levelMidPoint
       value: 
       objectReference: {fileID: 6170456453992881308}
     - target: {fileID: 3083915877961893528, guid: be8b504b34a937945839f20094021973, type: 3}
-      propertyPath: levelDimensionX
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 3083915877961893528, guid: be8b504b34a937945839f20094021973, type: 3}
-      propertyPath: levelDimensionY
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 3083915877961893528, guid: be8b504b34a937945839f20094021973, type: 3}
-      propertyPath: fogRevealers.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3083915877961893528, guid: be8b504b34a937945839f20094021973, type: 3}
-      propertyPath: fogRevealers.Array.data[0].sightRange
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 3083915877961893528, guid: be8b504b34a937945839f20094021973, type: 3}
-      propertyPath: fogRevealers.Array.data[1].sightRange
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3083915877961893528, guid: be8b504b34a937945839f20094021973, type: 3}
-      propertyPath: fogRevealers.Array.data[1].updateOnlyOnMove
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3083915877961893528, guid: be8b504b34a937945839f20094021973, type: 3}
       propertyPath: fogRevealers.Array.data[0].revealerTransform
-      value: 
-      objectReference: {fileID: 8594907742411243438}
-    - target: {fileID: 3083915877961893528, guid: be8b504b34a937945839f20094021973, type: 3}
-      propertyPath: fogRevealers.Array.data[1].revealerTransform
       value: 
       objectReference: {fileID: 8594907742411243438}
     - target: {fileID: 3648900994479825947, guid: be8b504b34a937945839f20094021973, type: 3}
       propertyPath: m_Name
       value: FogWar
-      objectReference: {fileID: 0}
-    - target: {fileID: 3648900994479825947, guid: be8b504b34a937945839f20094021973, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4810547017950531273, guid: be8b504b34a937945839f20094021973, type: 3}
       propertyPath: m_LocalPosition.x

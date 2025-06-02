@@ -9,6 +9,11 @@ public class Health : MonoBehaviour, IHealable, IDamagable
     [SerializeField] private CharacterDataSO _characterData;
     [SerializeField] private GameObjectEventAsset _onCharacterDeath;
     [SerializeField] private Death _death;
+    
+    [SerializeField] private Renderer _mesh;
+    [SerializeField] private Material _normal;
+    [SerializeField] private Material _damage;
+    
 
     private void OnEnable()
     {
@@ -23,12 +28,21 @@ public class Health : MonoBehaviour, IHealable, IDamagable
 
     public void Damage(float amount)
     {
+        StartCoroutine(DamageFeedback());
+        
         _currentHealth -= amount;
         _currentHealth = Mathf.Clamp(_currentHealth, 0f, _characterData.MaxHealth);
         
         if(_currentHealth <= 0) StartCoroutine(OnPlayerDeathCoroutine());
     }
-
+    
+    private IEnumerator DamageFeedback()
+    {
+        _mesh.material = _damage;
+        yield return new WaitForSeconds(0.2f);
+        _mesh.material = _normal;
+    }
+    
     private IEnumerator OnPlayerDeathCoroutine()
     {
         _death.DeathFunctionality();

@@ -268,6 +268,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6170456453992881308}
   - component: {fileID: 714099619597399532}
+  - component: {fileID: 8582923110220430629}
   m_Layer: 9
   m_Name: Ground
   m_TagString: Untagged
@@ -401,6 +402,38 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 60.61158, y: 0.31, z: 54.696304}
   m_Center: {x: 0, y: 0, z: -3.1820266}
+--- !u!114 &8582923110220430629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4354105135738812515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 7799
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: af7d0be763c9fe04697580620af2ccca, type: 2}
+  m_BuildHeightMesh: 0
 --- !u!1 &6049270111031808407
 GameObject:
   m_ObjectHideFlags: 0
@@ -2988,7 +3021,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3648900994479825947, guid: be8b504b34a937945839f20094021973, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4810547017950531273, guid: be8b504b34a937945839f20094021973, type: 3}
       propertyPath: m_LocalPosition.x

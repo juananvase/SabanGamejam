@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1173109500379562998}
   - component: {fileID: 9149730453487383556}
   - component: {fileID: 5687257622695930099}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: parietal.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 1297467801855114009}
   - component: {fileID: 3134812772405297281}
   - component: {fileID: 3251296344811765661}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: .
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -281,7 +281,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7338076866948624460}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BulletAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -316,7 +316,7 @@ GameObject:
   - component: {fileID: 1325756469196986600}
   - component: {fileID: 2738857158897622997}
   - component: {fileID: 2986873274435650938}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cerebelo.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -606,7 +606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8a861e13d99ae74f99e12a81afe0b6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _weaponData: {fileID: 11400000, guid: 017731180a63f594590c16cfeaf3e9d1, type: 2}
+  _weaponData: {fileID: 11400000, guid: 273d81f4043d2ce45a314393e3f06e17, type: 2}
   _secondWeaponData: {fileID: 0}
   _bulletAnchor: {fileID: 7338076866948624460}
   _layer: EnemyBullet
@@ -645,7 +645,7 @@ GameObject:
   - component: {fileID: 5242913081302514453}
   - component: {fileID: 3065842108708041684}
   - component: {fileID: 279216155666784009}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Occipital.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -781,7 +781,7 @@ GameObject:
   - component: {fileID: 4744126485205870522}
   - component: {fileID: 990273314129442347}
   - component: {fileID: 2700663073568605924}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: frontal.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}

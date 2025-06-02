@@ -56,7 +56,6 @@ public class Death : MonoBehaviour
     {
         if (!string.IsNullOrEmpty(deathSceneName))
         {
-            Debug.Log("Muriendo");
             SceneManager.LoadScene(deathSceneName);
 
             PlayerPrefs.SetInt("LastSceneBeforeDeath", SceneManager.GetActiveScene().buildIndex);

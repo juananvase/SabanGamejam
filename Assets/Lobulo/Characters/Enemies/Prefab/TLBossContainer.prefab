@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8a861e13d99ae74f99e12a81afe0b6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _weaponData: {fileID: 11400000, guid: 017731180a63f594590c16cfeaf3e9d1, type: 2}
+  _weaponData: {fileID: 11400000, guid: 11e31cb927e817040b2f1d1436ebbce5, type: 2}
   _secondWeaponData: {fileID: 0}
   _bulletAnchor: {fileID: 3826115829360931487}
   _layer: EnemyBullet
@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 3253312093833163398}
   - component: {fileID: 6779710415888269615}
   - component: {fileID: 7429432954594027686}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: frontal.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -342,7 +342,7 @@ GameObject:
   - component: {fileID: 1004569006406287441}
   - component: {fileID: 4854486413714345423}
   - component: {fileID: 1572188241372764699}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Temporal.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -478,7 +478,7 @@ GameObject:
   - component: {fileID: 2608149679624908329}
   - component: {fileID: 873453097880192766}
   - component: {fileID: 8638300636765352683}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Occipital.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -614,7 +614,7 @@ GameObject:
   - component: {fileID: 8986698980643378890}
   - component: {fileID: 1698486977511495436}
   - component: {fileID: 7487841634806726984}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: parietal.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -750,7 +750,7 @@ GameObject:
   - component: {fileID: 9121649103660781012}
   - component: {fileID: 170193084605467337}
   - component: {fileID: 1235511049717422724}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cerebelo.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -882,7 +882,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3826115829360931487}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BulletAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}

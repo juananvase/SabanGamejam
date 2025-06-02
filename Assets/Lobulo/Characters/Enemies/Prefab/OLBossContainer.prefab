@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3770423556946297415}
   - component: {fileID: 3638915567505293131}
   - component: {fileID: 6625672106196727139}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: parietal.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -303,7 +303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8a861e13d99ae74f99e12a81afe0b6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _weaponData: {fileID: 11400000, guid: 017731180a63f594590c16cfeaf3e9d1, type: 2}
+  _weaponData: {fileID: 11400000, guid: a6d9f456c50eadd4489a52f7d26920f9, type: 2}
   _secondWeaponData: {fileID: 0}
   _bulletAnchor: {fileID: 1879070483440540029}
   _layer: EnemyBullet
@@ -342,7 +342,7 @@ GameObject:
   - component: {fileID: 3923352859741493593}
   - component: {fileID: 8468253468613494939}
   - component: {fileID: 922092002029744793}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cerebelo.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -478,7 +478,7 @@ GameObject:
   - component: {fileID: 7332424486303163915}
   - component: {fileID: 1522741839643002745}
   - component: {fileID: 3156162814755420762}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: frontal.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -614,7 +614,7 @@ GameObject:
   - component: {fileID: 4977855363205780700}
   - component: {fileID: 5772625199426695905}
   - component: {fileID: 4073340403169093331}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Temporal.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -746,7 +746,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1879070483440540029}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BulletAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -781,7 +781,7 @@ GameObject:
   - component: {fileID: 7842479392411810468}
   - component: {fileID: 8929622450188522040}
   - component: {fileID: 8195766771277979680}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Occipital.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}

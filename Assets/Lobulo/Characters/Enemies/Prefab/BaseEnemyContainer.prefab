@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3970944874419246389}
   - component: {fileID: 93414086185992899}
   - component: {fileID: 6154636357998030329}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: parietal.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 3835397613541248555}
   - component: {fileID: 2548711361554179701}
   - component: {fileID: 1843765574810067890}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cerebelo.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 7388890023961014649}
   - component: {fileID: 4561054419643446610}
   - component: {fileID: 8995455846043330499}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: frontal.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -541,6 +541,7 @@ MonoBehaviour:
   - {fileID: 3736489823486763016}
   - {fileID: 6154636357998030329}
   - {fileID: 6232051094512357780}
+  deathSceneName: DeathScene
 --- !u!114 &4799517305217491833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -608,7 +609,7 @@ GameObject:
   - component: {fileID: 5070059740017525678}
   - component: {fileID: 6016299332422714832}
   - component: {fileID: 6232051094512357780}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Temporal.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -740,7 +741,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1140163324467143199}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BulletAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -775,7 +776,7 @@ GameObject:
   - component: {fileID: 8043015622765882838}
   - component: {fileID: 1270683243094396962}
   - component: {fileID: 3736489823486763016}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Occipital.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}

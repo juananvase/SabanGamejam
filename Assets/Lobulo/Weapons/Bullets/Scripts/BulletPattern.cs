@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -9,6 +10,11 @@ public class BulletPattern : MonoBehaviour
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();
+    }
+
+    private void Start()
+    {
+        if(transform.parent != null)  gameObject.layer = transform.parent.gameObject.layer;
     }
 
     private bool CheckAmmo()

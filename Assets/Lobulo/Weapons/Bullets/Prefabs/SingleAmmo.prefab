@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7623664421290590175}
   - component: {fileID: 8935478281073273083}
   - component: {fileID: 379679151759102621}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: SingleAmmo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _force: 17
-  _bullets: []
 --- !u!1001 &5850313610240644549
 PrefabInstance:
   m_ObjectHideFlags: 0

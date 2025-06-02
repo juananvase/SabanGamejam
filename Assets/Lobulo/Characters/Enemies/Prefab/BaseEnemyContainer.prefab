@@ -517,11 +517,11 @@ MonoBehaviour:
   _characterData: {fileID: 11400000, guid: 8397ff8ee8e03a84197c314132616b5a, type: 2}
   _onCharacterDeath: {fileID: 11400000, guid: 46d203b0399f49d4e91b1cf030128eb6, type: 2}
   _death: {fileID: 1888444302761666813}
-  _mesh: {fileID: 0}
-  _normal: {fileID: 0}
-  _damage: {fileID: 0}
+  _mesh: {fileID: 7388890023961014649}
+  _normal: {fileID: -1047458964887446911, guid: 205dce4ddd61ec940a901986e37d4aed, type: 3}
+  _damage: {fileID: 2100000, guid: 373c39c621fefdb47bfa60a20f468cf4, type: 2}
   _effectsMusicSource: {fileID: -8912452924681814085}
-  _sfx: {fileID: 8300000, guid: 9c37fe7f638dd4c468fbde396c683f66, type: 3}
+  _sfx: {fileID: 8300000, guid: bb365666fd13bde4aa30edde0b4f87f8, type: 3}
 --- !u!114 &1888444302761666813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -548,6 +548,8 @@ MonoBehaviour:
   - {fileID: 6154636357998030329}
   - {fileID: 6232051094512357780}
   deathSceneName: DeathScene
+  _effectsMusicSource: {fileID: -8912452924681814085}
+  _sfx: {fileID: 8300000, guid: bb365666fd13bde4aa30edde0b4f87f8, type: 3}
 --- !u!114 &4799517305217491833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -581,7 +583,7 @@ MonoBehaviour:
   _bulletAnchor: {fileID: 1140163324467143199}
   _layer: EnemyBullet
   _effectsMusicSource: {fileID: -8912452924681814085}
-  _sfx: {fileID: 8300000, guid: 9c37fe7f638dd4c468fbde396c683f66, type: 3}
+  _sfx: {fileID: 8300000, guid: 7908c2e6f846b4e49b83927167ef20cd, type: 3}
 --- !u!195 &2110546183132037198
 NavMeshAgent:
   m_ObjectHideFlags: 0

@@ -14,7 +14,7 @@
  */
 
 
-
+using System;
 using UnityEngine;                  // Monobehaviour
 using System.Collections.Generic;   // List
 using System.Linq;                  // ToList
@@ -45,7 +45,10 @@ namespace FischlWorks_FogWar
         private List<MeshRenderer> meshRenderers = null;
         private List<SkinnedMeshRenderer> skinnedMeshRenderers = null;
 
-
+        private void Awake()
+        {
+            fogWar = GameManager.Instance.FogWar;
+        }
 
         private void Start()
         {

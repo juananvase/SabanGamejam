@@ -33,7 +33,9 @@ public class Health : MonoBehaviour, IHealable, IDamagable
     {
         _death.DeathFunctionality();
         yield return new WaitForSeconds(3f);
+        _death.DeathScene();
         _onCharacterDeath?.Invoke(gameObject);
         Destroy(gameObject);
     }
 }
+

@@ -12,8 +12,6 @@ public class ButtonsUI : MonoBehaviour
 
     public void RetryLevel()
     {
-        _characterData.CurrentHealth = _characterData.MaxHealth;
-
         int lastSceneIndex = PlayerPrefs.GetInt("LastSceneBeforeDeath", 0);
         SceneManager.LoadScene(lastSceneIndex);
     }

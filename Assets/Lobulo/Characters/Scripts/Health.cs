@@ -23,13 +23,13 @@ public class Health : MonoBehaviour, IHealable, IDamagable
 
     public void Damage(float amount)
     {
-        _characterData.CurrentHealth -= amount;
-        _characterData.CurrentHealth = Mathf.Clamp(_characterData.CurrentHealth, 0f, _characterData.MaxHealth);
-
-        if (_characterData.CurrentHealth <= 0)
-        {
-            StartCoroutine(OnPlayerDeathCoroutine());
-        }
+        // _characterData.CurrentHealth -= amount;
+        // _characterData.CurrentHealth = Mathf.Clamp(_characterData.CurrentHealth, 0f, _characterData.MaxHealth);
+        //
+        // if (_characterData.CurrentHealth <= 0)
+        // {
+        //     StartCoroutine(OnPlayerDeathCoroutine());
+        // }
     }
 
     private IEnumerator OnPlayerDeathCoroutine()

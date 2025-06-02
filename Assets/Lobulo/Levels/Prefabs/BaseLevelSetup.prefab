@@ -3000,6 +3000,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3083915877961893528, guid: be8b504b34a937945839f20094021973, type: 3}
+      propertyPath: fogRevealers.Array.data[0].sightRange
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3083915877961893528, guid: be8b504b34a937945839f20094021973, type: 3}
       propertyPath: fogRevealers.Array.data[1].sightRange
       value: 10
       objectReference: {fileID: 0}
@@ -3021,7 +3025,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3648900994479825947, guid: be8b504b34a937945839f20094021973, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4810547017950531273, guid: be8b504b34a937945839f20094021973, type: 3}
       propertyPath: m_LocalPosition.x

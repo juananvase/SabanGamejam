@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: a475d23e623c34545a83172edb146d2c
+guid: 1cc6390dbbea86147965843455997bc5
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: flesh1
+    second: {fileID: 2800000, guid: b9f69232192d33644b540abecfc216ca, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

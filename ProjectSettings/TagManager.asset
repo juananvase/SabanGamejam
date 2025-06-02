@@ -8,7 +8,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - wall
   - Water
   - UI
   - Death
@@ -18,7 +18,7 @@ TagManager:
   - EnemyBullet
   - PlayerBullet
   - Shield
-  - 
+  - Bullet
   - 
   - 
   - 

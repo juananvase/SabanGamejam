@@ -1,4 +1,5 @@
 using System;
+using FischlWorks_FogWar;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -6,6 +7,7 @@ public class GameManager : MonoBehaviour
     [field: SerializeField] public GameObject Player { get; private set; }
     [field: SerializeField] public Camera Camera { get; private set; }
     [field: SerializeField] public GameObject RoomBoss { get; private set; }
+    [field: SerializeField] public csFogWar FogWar { get; private set; }
     [field: SerializeField] public PerksDataSO PerksData { get; private set; }
 
     [SerializeField] private bool _haveShield;

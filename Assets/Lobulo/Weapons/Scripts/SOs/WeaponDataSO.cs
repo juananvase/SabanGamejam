@@ -4,5 +4,5 @@ using UnityEngine;
 public class WeaponDataSO : ScriptableObject
 {
     [field: SerializeField] public BulletPattern Ammo { get; private set; }
-    [field: SerializeField] public float CooldownTime { get; private set; }
+    [field: SerializeField] public float CooldownTime { get; set; }
 }

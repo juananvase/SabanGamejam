@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _currentHealth: 0
-  _characterData: {fileID: 11400000, guid: 8397ff8ee8e03a84197c314132616b5a, type: 2}
+  _characterData: {fileID: 11400000, guid: 0773280612bb8404f89fbfdddd10e3a9, type: 2}
   _onCharacterDeath: {fileID: 11400000, guid: 46d203b0399f49d4e91b1cf030128eb6, type: 2}
   _death: {fileID: 5757976853079896751}
   _mesh: {fileID: 3253312093833163398}

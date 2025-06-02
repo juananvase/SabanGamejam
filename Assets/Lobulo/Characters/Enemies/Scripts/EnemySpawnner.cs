@@ -29,8 +29,12 @@ public class EnemySpawnner : MonoBehaviour
 
     private void CheckBossDeath(GameObject value)
     {
-        if (value == GameManager.Instance.RoomBoss) Destroy(gameObject);
-        onCharacterDeath?.Invoke();
+        if (value == GameManager.Instance.RoomBoss)
+        {
+            Destroy(gameObject);
+            onCharacterDeath?.Invoke();
+        }
+            
     }
 
     private void Update()

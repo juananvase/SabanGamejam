@@ -545,7 +545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _currentHealth: 0
-  _characterData: {fileID: 11400000, guid: 8397ff8ee8e03a84197c314132616b5a, type: 2}
+  _characterData: {fileID: 11400000, guid: 3e3d5c142612cbd44b585688a39e1114, type: 2}
   _onCharacterDeath: {fileID: 11400000, guid: 46d203b0399f49d4e91b1cf030128eb6, type: 2}
   _death: {fileID: 518391328380558529}
   _mesh: {fileID: 3628215414128357375}

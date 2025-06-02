@@ -1,16 +1,33 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerController : CharacterController
 {
     [SerializeField] private PlayerDataSO _playerData;
-    [SerializeField] private EmptyEventAsset _onPlayerDeath;
+    [SerializeField] private GameObjectEventAsset _onPlayerDeath;
+    
+    private bool _canMove = true;
     
     private PlayerMovement _playerMovement;
     private Weapon _weapon;
+    private Shield _shield;
     
     private InputAction _movementInput;
     private InputAction _shootingInput;
+    private InputAction _shieldInput;
+
+    public override void OnStunned()
+    {
+        StartCoroutine(ExitStunCoroutine());
+    }
+
+    private IEnumerator ExitStunCoroutine()
+    {
+        _canMove = false;
+        yield return new WaitForSeconds(1.3f);
+        _canMove = true;
+    }
 
     private void OnEnable()
     {
@@ -23,8 +40,9 @@ public class PlayerController : CharacterController
         _onPlayerDeath.RemoveListener(OnPlayerDeath);
     }
 
-    private void OnPlayerDeath()
+    private void OnPlayerDeath(GameObject value)
     {
+        if(value != gameObject) return;
         _playerData.InputAction.FindActionMap("Gameplay").Disable();
     }
 
@@ -38,22 +56,38 @@ public class PlayerController : CharacterController
     {
         _playerMovement = GetComponent<PlayerMovement>();
         _weapon = GetComponent<Weapon>();
+        _shield = GetComponent<Shield>();
     }
 
     private void FindInputs()
     {
         _movementInput = InputSystem.actions.FindAction("Movement");
         _shootingInput = InputSystem.actions.FindAction("Shoot");
+        _shieldInput = InputSystem.actions.FindAction("Shield");
     }
 
     private void Update()
     {
         Shoot();
+        UseShield();
+    }
+
+    private void UseShield()
+    {
+        if (!_shield || !GameManager.Instance.PerksData.HaveShield) return;
+        if ( _shieldInput.WasPressedThisFrame())
+        {
+            _shield.UseShield();
+        }
+        else if(_shieldInput.WasReleasedThisFrame())
+        {
+            _shield.StopShield();
+        }
     }
 
     private void FixedUpdate()
     {
-        Move();
+        if(_canMove) Move();
     }
 
     private void Move()

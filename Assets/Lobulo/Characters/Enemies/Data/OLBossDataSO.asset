@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc19453200f292b4384e59307b4df231, type: 3}
-  m_Name: OnEnemyDeath
+  m_Script: {fileID: 11500000, guid: 16e921730a9f1f4458ab8580f5762dd0, type: 3}
+  m_Name: OLBossDataSO
   m_EditorClassIdentifier: 
-  OnInvoked:
-    m_PersistentCalls:
-      m_Calls: []
+  <MaxHealth>k__BackingField: 750
+  <AttackRange>k__BackingField: 20

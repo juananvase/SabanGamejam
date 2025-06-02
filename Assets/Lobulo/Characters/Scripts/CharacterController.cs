@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public abstract class CharacterController : MonoBehaviour
+public abstract class CharacterController : MonoBehaviour, Istunnable
 {
-    
+    public virtual void OnStunned() { }
 }

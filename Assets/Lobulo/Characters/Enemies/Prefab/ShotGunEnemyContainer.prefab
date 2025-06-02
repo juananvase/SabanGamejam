@@ -56,6 +56,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShotGunEnemyContainer
       objectReference: {fileID: 0}
+    - target: {fileID: 8339419014069469589, guid: 865b991cb5c52674b954d73205502e8a, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: d2373dbe2c92c8644bd8b58dd5250c5d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

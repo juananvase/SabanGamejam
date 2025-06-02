@@ -5,22 +5,28 @@ using UnityEngine;
 
 public class Health : MonoBehaviour, IHealable, IDamagable
 {
+    [SerializeField] private float _currentHealth;
     [SerializeField] private CharacterDataSO _characterData;
     [SerializeField] private GameObjectEventAsset _onCharacterDeath;
     [SerializeField] private Death _death;
 
+    private void OnEnable()
+    {
+        _currentHealth = _characterData.MaxHealth;
+    }
+
     public void Heal(float amount)
     {
-        _characterData.CurrentHealth += amount;
-        _characterData.CurrentHealth = Mathf.Clamp(_characterData.CurrentHealth, 0f, _characterData.MaxHealth);
+        _currentHealth += amount;
+        _currentHealth = Mathf.Clamp(_currentHealth, 0f, _characterData.MaxHealth);
     }
 
     public void Damage(float amount)
     {
-        _characterData.CurrentHealth -= amount;
-        _characterData.CurrentHealth = Mathf.Clamp(_characterData.CurrentHealth, 0f, _characterData.MaxHealth);
+        _currentHealth -= amount;
+        _currentHealth = Mathf.Clamp(_currentHealth, 0f, _characterData.MaxHealth);
         
-        if(_characterData.CurrentHealth <= 0) StartCoroutine(OnPlayerDeathCoroutine());
+        if(_currentHealth <= 0) StartCoroutine(OnPlayerDeathCoroutine());
     }
 
     private IEnumerator OnPlayerDeathCoroutine()

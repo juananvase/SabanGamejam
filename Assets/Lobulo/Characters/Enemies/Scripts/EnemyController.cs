@@ -1,4 +1,4 @@
-using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -8,43 +8,59 @@ public class EnemyController : CharacterController
 {
     [SerializeField] private EnemyDataSO _enemyData;
     [SerializeField] private LayerMask _playerLayer;
-    private NavMeshAgent _agent;
+    protected NavMeshAgent _agent;
     private Weapon _weapon;
-    private Transform _player;
-    private bool _playerInAttackRange = false;
+    protected Transform _player;
+    protected bool _playerInAttackRange = false;
+    
+    private bool _isStun = false;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         _agent = GetComponent<NavMeshAgent>();
         _weapon = GetComponent<Weapon>();
     }
-
-    private void Start()
+    
+    protected virtual void Start()
     {
         _player = GameManager.Instance.Player.transform;
     }
-
-    private void Update()
+    
+    protected virtual void Update()
     {
+        if(_isStun) return;
+        
         CheckAttackRange();
         if (!_playerInAttackRange) ChasePlayer();
         else AttackPlayer();
     }
 
-    private void ChasePlayer()
+    public override void OnStunned()
+    {
+        StartCoroutine(ExitStunCoroutine());
+    }
+
+    private IEnumerator ExitStunCoroutine()
+    {
+        _isStun = true;
+        yield return new WaitForSeconds(1.7f);
+        _isStun = false;
+    }
+
+    protected virtual void ChasePlayer()
     {
         if(!_player) return;
         _agent.SetDestination(_player.position);
     }
     
-    private void AttackPlayer()
+    protected void AttackPlayer()
     {
         transform.LookAt(_player);
 
         _weapon.Shoot();
     }
 
-    private void CheckAttackRange()
+    protected void CheckAttackRange()
     {
         _playerInAttackRange = Physics.CheckSphere(transform.position, _enemyData.AttackRange, _playerLayer);
     }

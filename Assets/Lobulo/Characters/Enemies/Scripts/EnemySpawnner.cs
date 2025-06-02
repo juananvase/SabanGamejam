@@ -38,7 +38,7 @@ public class EnemySpawnner : MonoBehaviour
     {
         if(_isCoolingdown) return;
         SpawnedFeedback();
-        Instantiate(_enemiesToSpawn[Random.Range(0, _enemiesToSpawn.Length + 1)], transform.position, transform.rotation);
+        Instantiate(_enemiesToSpawn[Random.Range(0, _enemiesToSpawn.Length)], transform.position, transform.rotation);
         StartCoolDown();
     }
 

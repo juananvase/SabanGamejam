@@ -622,7 +622,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5507081899972202233}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: d2373dbe2c92c8644bd8b58dd5250c5d, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -648,8 +648,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c25b4acc1b20f6b40aa1814367218f0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _currentHealth: 0
   _characterData: {fileID: 11400000, guid: 8397ff8ee8e03a84197c314132616b5a, type: 2}
-  _onCharacterDeath: {fileID: 11400000, guid: cf6553720fb261243bdbd47e5ac1e5c3, type: 2}
+  _onCharacterDeath: {fileID: 11400000, guid: 46d203b0399f49d4e91b1cf030128eb6, type: 2}
   _death: {fileID: 1888444302761666813}
 --- !u!114 &1888444302761666813
 MonoBehaviour:
@@ -663,6 +664,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7416c7b66d389043ac1493ccefb0d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _drop: {fileID: 0}
   _colliders:
   - {fileID: 316546283203977691}
   - {fileID: 4557776409167491899}

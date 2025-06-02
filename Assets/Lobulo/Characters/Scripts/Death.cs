@@ -4,18 +4,24 @@ using UnityEngine;
 
 public class Death : MonoBehaviour
 {
+    [SerializeField] private GameObject _drop;
     [SerializeField] private Collider[] _colliders;
     [SerializeField] private Rigidbody[] _rigidbodies;
     
     private CharacterController _characterController;
+    private PlayerAimRotation _playerAimRotation;
 
     private void Awake()
     {
         _characterController = GetComponent<CharacterController>();
+        _playerAimRotation = TryGetComponent(out PlayerAimRotation playerAimRotation) ? playerAimRotation : null;
     }
 
     public void DeathFunctionality()
     {
+        if(_drop != null) Instantiate(_drop, transform.position, transform.rotation);
+        
+        if(_playerAimRotation) _playerAimRotation.enabled = false;
         _characterController.enabled = false;
         ChangeLayerToDeath();
         Disarmament();

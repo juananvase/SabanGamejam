@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1635674194263858983
 Transform:
   m_ObjectHideFlags: 0
@@ -49,4 +49,4 @@ MonoBehaviour:
   - {fileID: 5507081899972202233, guid: 865b991cb5c52674b954d73205502e8a, type: 3}
   - {fileID: 8512080713675053979, guid: 05dd476439e524b43a45b79d04ab354c, type: 3}
   _spawnCooldown: 3
-  _onCharacterDeath: {fileID: 0}
+  _onCharacterDeath: {fileID: 11400000, guid: 46d203b0399f49d4e91b1cf030128eb6, type: 2}

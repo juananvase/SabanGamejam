@@ -46,3 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Player>k__BackingField: {fileID: 0}
   <RoomBoss>k__BackingField: {fileID: 0}
+  <PerksData>k__BackingField: {fileID: 11400000, guid: 71e8cc4b858ff704cb5900d500e91822, type: 2}

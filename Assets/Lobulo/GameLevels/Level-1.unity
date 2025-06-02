@@ -656,6 +656,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5128683843743955496, guid: f4249322c79ef0e4989c8514539919f9, type: 3}
   m_PrefabInstance: {fileID: 546808768}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &546808770 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6703227791697882067, guid: f4249322c79ef0e4989c8514539919f9, type: 3}
+  m_PrefabInstance: {fileID: 546808768}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &817764215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1869,10 +1874,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 381334017005514792, guid: 3134e37a92597744695526eff126227e, type: 3}
       propertyPath: fogRevealers.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 381334017005514792, guid: 3134e37a92597744695526eff126227e, type: 3}
       propertyPath: fogRevealers.Array.data[5].sightRange
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 381334017005514792, guid: 3134e37a92597744695526eff126227e, type: 3}
+      propertyPath: fogRevealers.Array.data[6].sightRange
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 381334017005514792, guid: 3134e37a92597744695526eff126227e, type: 3}
+      propertyPath: fogRevealers.Array.data[7].sightRange
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 381334017005514792, guid: 3134e37a92597744695526eff126227e, type: 3}
@@ -1881,6 +1894,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 381334017005514792, guid: 3134e37a92597744695526eff126227e, type: 3}
       propertyPath: fogRevealers.Array.data[5].updateOnlyOnMove
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 381334017005514792, guid: 3134e37a92597744695526eff126227e, type: 3}
+      propertyPath: fogRevealers.Array.data[6].updateOnlyOnMove
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 381334017005514792, guid: 3134e37a92597744695526eff126227e, type: 3}
+      propertyPath: fogRevealers.Array.data[7].updateOnlyOnMove
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 381334017005514792, guid: 3134e37a92597744695526eff126227e, type: 3}
@@ -1901,6 +1922,14 @@ PrefabInstance:
       objectReference: {fileID: 1909593045}
     - target: {fileID: 381334017005514792, guid: 3134e37a92597744695526eff126227e, type: 3}
       propertyPath: fogRevealers.Array.data[5].revealerTransform
+      value: 
+      objectReference: {fileID: 6017595822450423754}
+    - target: {fileID: 381334017005514792, guid: 3134e37a92597744695526eff126227e, type: 3}
+      propertyPath: fogRevealers.Array.data[6].revealerTransform
+      value: 
+      objectReference: {fileID: 546808770}
+    - target: {fileID: 381334017005514792, guid: 3134e37a92597744695526eff126227e, type: 3}
+      propertyPath: fogRevealers.Array.data[7].revealerTransform
       value: 
       objectReference: {fileID: 1909593045}
     - target: {fileID: 5104378810518252090, guid: 3134e37a92597744695526eff126227e, type: 3}
@@ -1986,6 +2015,11 @@ PrefabInstance:
 --- !u!1 &6017595822450423753 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8589213913169996902, guid: 3134e37a92597744695526eff126227e, type: 3}
+  m_PrefabInstance: {fileID: 6017595822450423752}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6017595822450423754 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5208416384271871424, guid: 3134e37a92597744695526eff126227e, type: 3}
   m_PrefabInstance: {fileID: 6017595822450423752}
   m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807

@@ -432,6 +432,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 381334017005514792, guid: 3134e37a92597744695526eff126227e, type: 3}
+      propertyPath: fogRevealers.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 381334017005514792, guid: 3134e37a92597744695526eff126227e, type: 3}
+      propertyPath: fogRevealers.Array.data[5].sightRange
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 381334017005514792, guid: 3134e37a92597744695526eff126227e, type: 3}
+      propertyPath: fogRevealers.Array.data[5].updateOnlyOnMove
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 381334017005514792, guid: 3134e37a92597744695526eff126227e, type: 3}
       propertyPath: fogRevealers.Array.data[1].revealerTransform
       value: 
       objectReference: {fileID: 1145943217}
@@ -443,6 +455,10 @@ PrefabInstance:
       propertyPath: fogRevealers.Array.data[3].revealerTransform
       value: 
       objectReference: {fileID: 1708193753}
+    - target: {fileID: 381334017005514792, guid: 3134e37a92597744695526eff126227e, type: 3}
+      propertyPath: fogRevealers.Array.data[5].revealerTransform
+      value: 
+      objectReference: {fileID: 569501198}
     - target: {fileID: 5104378810518252090, guid: 3134e37a92597744695526eff126227e, type: 3}
       propertyPath: <RoomBoss>k__BackingField
       value: 
@@ -652,6 +668,11 @@ PrefabInstance:
 --- !u!1 &569501197 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4963430228709849518, guid: 64486737b3737d8409a87148d2f20022, type: 3}
+  m_PrefabInstance: {fileID: 569501196}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &569501198 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8819246489128845467, guid: 64486737b3737d8409a87148d2f20022, type: 3}
   m_PrefabInstance: {fileID: 569501196}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &646438270
